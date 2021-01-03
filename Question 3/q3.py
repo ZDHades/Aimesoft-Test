@@ -1,9 +1,12 @@
-"""
-Linked List Definition:
-A data simple data structure that represents a sequence of nodes. In a single linked list each node points to the next node in the linked list. As a result, unlike an array a linked list does not  provide constant time access to a particular "index" within the list. This means that if you'd like to find the "Kth" element  you will need to iterate through "K" elements.
-"""
+# Question 3: Assume you have a single linked list:
 
+# n1 >> n2 >> n3 >> ... n(k-1) >> n(k)
 
+# Write an algorithm to rearrange the single linked list in the following format so that good performance (min cost + fastest speed):
+
+# n1 >> n(k) >> n2 >> n(k-1)...
+
+# Making the Linked List class + methods
 class Node:
     def __init__(self, data):
         self.data = data
@@ -107,18 +110,8 @@ class LinkedList:
         return " -> ".join(nodes)
 
 
-"""
-Problem Set: Assume you have a single linked list:
-
-n1 >> n2 >> n3 >> ... n(k-1) >> n(k)
-
-Write an algorithm to rearrange the single linked list in the following format so that good performance (min cost + fastest speed):
-
-n1 >> n(k) >> n2 >> n(k-1)...
-"""
 from collections import deque
-
-
+# Usind the deque library to  rearrange the linked list to the disired order. This algo assumes that the linked list is sorted, as it was in the example. 
 def solve(node_llist):
     if not node_llist.head:
         raise Exception("Linked List Is Empty")
