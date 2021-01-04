@@ -26,8 +26,9 @@ appends them each to a new line, again using the \r keyword.
 
 The final method is just used to call all of the previous ones so that the program can be run much easier.
 
-The directory currently contains a working solution, with each of the 1000 files and the output present. If you want to test it for 
-yourself, you can either run it from the command line, or run the q1.py file by opening it from the folder. 
+The directory currently contains a working solution file, the test file and this .txt file. To see the solution in action,
+run the q1.py file from the folder menu (not via command line in console or command prompt). Doing so will create 1k random .txt files and the output .txt file. If the 
+file is run form the command line, all of the files will be created in the parent folder to this one. 
 
 
 - UNITTEST -
@@ -36,5 +37,5 @@ Since I used randomly generated numbers, each iteration of the program would yie
 used unittest to check if the output file produced a set of numbers that were all sorted and if the length of the numbers in the final 
 file was equal to the amount of numbers present in all of the files. Both tests run OK with time of .301s
 
-To run the unittest, first make sure the Question_1.solution() method has been run. Then CD into the folder that contains test_q1.py and 
+To run the unittest, first make sure the q1.py file has been run. Then CD into the folder that contains test_q1.py and 
 run it from the console on either your editor or in command prompt!
